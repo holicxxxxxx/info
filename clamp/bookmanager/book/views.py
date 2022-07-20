@@ -7,4 +7,9 @@ from django.http import HttpResponse
 
 def index(request):
 
-    return HttpResponse("ok")
+    # return HttpResponse("ok")
+    context={
+        'name':'clamp'
+    }
+
+    return render(request,'book/index.html',context=context)
